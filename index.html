@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do 캘린더</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>To-Do 캘린더</h1>
+</header>
+
+<main>
+  <section id="calendar">
+    <div class="calendar-header">
+      <button id="prevMonth">◀</button>
+      <span id="currentMonth"></span>
+      <button id="nextMonth">▶</button>
+    </div>
+    <div id="calendarDays"></div>
+  </section>
+
+  <section id="todoSection">
+    <h2 id="selectedDate">날짜 선택</h2>
+
+    <form id="todoForm">
+      <input type="text" id="todoText" placeholder="할 일" required />
+      <input type="password" id="todoPassword" placeholder="비밀번호" required />
+
+      <select id="todoStatus">
+        <option value="doing">진행중</option>
+        <option value="done">완료</option>
+      </select>
+
+      <select id="todoShare">
+        <option value="public">공유</option>
+        <option value="private">비공개</option>
+      </select>
+
+      <button type="submit">추가</button>
+    </form>
+
+    <ul id="todoList"></ul>
+  </section>
+</main>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

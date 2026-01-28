@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: #f4f4f4;
+  }
+  
+  header {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  #calendar, #todoSection {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  #calendar {
+    min-width: 260px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  #calendarDays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.3rem;
+  }
+  
+  .calendar-day {
+    padding: 0.4rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .calendar-day:hover {
+    background: #eee;
+  }
+  
+  .calendar-day.active {
+    background: #222;
+    color: white;
+  }
+  
+  #todoForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  #todoForm input,
+  #todoForm select,
+  #todoForm button {
+    padding: 0.4rem;
+  }
+  
+  #todoList li {
+    list-style: none;
+    padding: 0.5rem;
+    margin-bottom: 0.4rem;
+    background: #eee;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .todo-doing { border-left: 5px solid orange; }
+  .todo-done {
+    border-left: 5px solid green;
+    text-decoration: line-through;
+  }
+  
+  .todo-buttons button {
+    margin-left: 0.3rem;
+  }
+  
